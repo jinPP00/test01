@@ -1,0 +1,19 @@
+name: main
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        # 개인 토큰을 사용할 것인지 말 것인지
+        persist-credentials: false 
+    - name : hello world 출력!!
+      run : echo hello, world!
+    - name : 디렉토리 출력!!
+      run : ls -al
+    - name : 파이션 버젼 출력!!
+      run : python -V
+    - name: 파이썬 실행!!
+      run : python test.py
