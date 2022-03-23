@@ -1,8 +1,3 @@
-with open("sample.txt", mode="r", encoding="utf-8") as s:
-  mycontnet = s.read()
-print(mycontnet)
+from pathlib import Path
 
-
-with open("./data/sample.txt", mode="r", encoding="utf-8") as s:
-  mycontnet = s.read()
-print(mycontnet)
+print(Path.cwd())
