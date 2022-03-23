@@ -17,3 +17,5 @@ jobs:
       run : python -V
     - name: 파이썬 실행!!
       run : python test.py
+    - name : 구글시트 파이썬 실행!!
+      run : python 구글시트.py
