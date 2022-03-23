@@ -14,3 +14,4 @@ def SheetLoad(myFile, myWorksheet):
 
 if __name__ == '__main__':
   df, worksheet = SheetLoad("실시간크롤링", "TV")
+  print(df)
