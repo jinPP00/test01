@@ -6,7 +6,7 @@ import pandas as pd
 
 # 구글시트 불러오기
 def SheetLoad(myFile, myWorksheet):
-  gc = gspread.service_account(filename="./data\\spiritual-storm-330801-38127d4a8be0.json")
+  gc = gspread.service_account(filename="./data/spiritual-storm-330801-38127d4a8be0.json")
   sh = gc.open(myFile)
   worksheet = sh.worksheet(myWorksheet)
   df = pd.DataFrame(worksheet.get_all_records())
